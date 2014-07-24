@@ -1,0 +1,62 @@
+/* README -- JNI implementation of LZO library
+
+   This file is part of the LZOjni library.
+
+   Copyright (C) 2013 BOUVIER-VOLAILLE Julien
+   All Rights Reserved.
+
+   The LZOjni library is free software; you can redistribute it and/or
+   modify it under the terms of the GNU General Public License as
+   published by the Free Software Foundation; either version 2 of
+   the License, or (at your option) any later version.
+
+   The LZOjni library is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+
+   You should have received a copy of the GNU General Public License
+   along with the LZO library; see the file COPYING.
+   If not, write to the Free Software Foundation, Inc.,
+   51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+   BOUVIER-VOLAILLE Julien
+   <bouviervj@gmail.com>
+
+ */
+
+This is a JNI implementation for the miniLZO C API
+
+See http://www.oberhumer.com/opensource/lzo/ to have fresh C sources.
+
+Operating Systems :
+
+This library has been compiled under Linux (64Bits) and Windows (32Bits, 64Bits) 
+operation system. The jar library tries to load the dll/library in a temporary 
+folder.
+
+
+How to compile :
+
+Windows :
+---------
+
+Install MINGw
+Install MINGw64
+Install a JDK in a path containing no space characters
+Declare in env PATH , MINGW exec + your JDK bin folder
+
+Linux :
+-------
+
+run linux_build.sh under linux system
+
+Building the jar :
+------------------
+
+run the jar ant target (build.xml located in project folder)
+
+Testing the library:
+--------------------
+
+Once the jar is build, you can launch TestLZOJni java program.
